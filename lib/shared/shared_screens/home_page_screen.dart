@@ -51,8 +51,8 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Text('Best Barbers', style: AppFonts.primaryTextStyle),
             Container(
-              height: MediaQuery.of(context).size.height / 3.3,
-              margin: EdgeInsets.only(top: 20.0, bottom: 20.0),
+              height: MediaQuery.of(context).size.height / 3.2,
+              margin: EdgeInsets.only(top: 10.0, bottom: 10.0),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: barberData.length,

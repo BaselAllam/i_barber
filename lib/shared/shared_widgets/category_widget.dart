@@ -30,7 +30,7 @@ class _CategoryWidgetState extends State<CategoryWidget> {
             ),
             child: Icon(widget.categoryIcon, color: AppColors.blackColor, size: 30.0),
           ),
-          Text('\n${widget.categoryTitle}', style: AppFonts.subPrimaryTextStyle)
+          Text('\n${widget.categoryTitle}', style: AppFonts.littlePrimaryTextStyle)
         ],
       )
     );
