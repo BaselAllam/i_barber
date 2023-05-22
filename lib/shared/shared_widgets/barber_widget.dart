@@ -17,6 +17,18 @@ class BarberWidget extends StatefulWidget {
 }
 
 class _BarberWidgetState extends State<BarberWidget> {
+
+  double responsiveCotainer(Size size) {
+
+    if  (size.height < 350) {
+      return 150;
+    } else if (size.height < 550) {
+      return 200;
+    } else {
+      return 250;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -33,7 +45,7 @@ class _BarberWidgetState extends State<BarberWidget> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 150.0,
+              height: responsiveCotainer(MediaQuery.of(context).size),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20.0),
                 image: DecorationImage(
