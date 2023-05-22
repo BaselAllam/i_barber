@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "847271525622",
+    "project_id": "ibarber-386215",
+    "storage_bucket": "ibarber-386215.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847271525622:android:2dd20b8e48e801ee2800d7",
+        "android_client_info": {
+          "package_name": "com.example.i_barber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847271525622-7n1fov2bp0lbfg2aob9mff4h7kepid5n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.i_barber",
+            "certificate_hash": "a3b5df4b2d33e030c3dce82afdcc3fcbfe8a81e0"
+          }
+        },
+        {
+          "client_id": "847271525622-cm85equqn8altkhubcb7fducpr6ednjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATORlEeqnREvJrj-9agBk9BDGZxzt2nS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847271525622-cm85equqn8altkhubcb7fducpr6ednjd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

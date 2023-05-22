@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:i_barber/barber/logic/barber_model.dart';
 import 'package:i_barber/shared/shared_themes/shared_colors.dart';
 import 'package:i_barber/shared/shared_themes/shared_fonts.dart';
 
 
 
 class BarberDetails extends StatefulWidget {
-  final Map<String, dynamic> barber;
+  final BarberModel barber;
   const BarberDetails(this.barber);
 
   @override

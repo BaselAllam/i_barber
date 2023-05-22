@@ -6,7 +6,7 @@ import 'package:i_barber/shared/shared_themes/shared_fonts.dart';
 
 class CategoryWidget extends StatefulWidget {
   final String categoryTitle;
-  final IconData categoryIcon;
+  final String categoryIcon;
   CategoryWidget(this.categoryTitle, this.categoryIcon);
 
   @override
@@ -26,9 +26,12 @@ class _CategoryWidgetState extends State<CategoryWidget> {
             width: 65,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: AppColors.lightPrimaryColor
+              color: AppColors.lightPrimaryColor,
+              image: DecorationImage(
+                image: NetworkImage(widget.categoryIcon),
+                fit: BoxFit.fill
+              )
             ),
-            child: Icon(widget.categoryIcon, color: AppColors.blackColor, size: 30.0),
           ),
           Text('\n${widget.categoryTitle}', style: AppFonts.littlePrimaryTextStyle)
         ],

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:i_barber/demo_data.dart';
 import 'package:i_barber/shared/shared_themes/shared_colors.dart';
 import 'package:i_barber/shared/shared_themes/shared_fonts.dart';
 import 'package:i_barber/shared/shared_widgets/barber_scondary_widget.dart';
@@ -42,14 +41,14 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                 ],
               ),
             ),
-            Flexible(
-              child: ListView.builder(
-                itemCount: barberData.length,
-                itemBuilder: (context, index) {
-                  return BarberSecondaryWidget(barberData[index]);
-                },
-              )
-            ),
+            // Flexible(
+            //   child: ListView.builder(
+            //     itemCount: barberData.length,
+            //     itemBuilder: (context, index) {
+            //       return BarberSecondaryWidget(barberData[index]);
+            //     },
+            //   )
+            // ),
           ],
         ),
       ),

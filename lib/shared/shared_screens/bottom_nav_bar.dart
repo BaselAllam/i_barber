@@ -2,19 +2,34 @@ import 'package:flutter/material.dart';
 import 'package:i_barber/appointment/views/appointment_screen.dart';
 import 'package:i_barber/shared/shared_screens/home_page_screen.dart';
 import 'package:i_barber/shared/shared_themes/shared_colors.dart';
+import 'package:i_barber/user/logic/main_model.dart';
 import 'package:i_barber/user/views/profile_screen.dart';
 import 'package:i_barber/user/views/wishlist_screen.dart';
 
 
 
 class BottomNavBar extends StatefulWidget {
-  const BottomNavBar({super.key});
+  final MainModel model;
+  const BottomNavBar(this.model, {super.key});
 
   @override
   State<BottomNavBar> createState() => _BottomNavBarState();
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
+
+  @override
+  void initState() {
+    _init();
+    super.initState();
+  }
+
+  _init() async {
+    await widget.model.getUserLocation();
+    await widget.model.getCategories();
+    await widget.model.getBarbers();
+    await widget.model.getfav();
+  }
 
   int selectedIndex = 0;
 
